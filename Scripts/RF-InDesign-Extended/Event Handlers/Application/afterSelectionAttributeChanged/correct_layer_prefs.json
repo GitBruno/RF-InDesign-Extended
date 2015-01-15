@@ -1,0 +1,163 @@
+// Comments are allowed, but only on their own line, as this one is.
+{
+  // When true, correctlayer will prevent duplicate layers from being created
+  // when you drag a library item out onto a hidden layer.
+  "preventLayerDuplicates":true,
+  
+  // The "layers" setting is used to control which styles are associated to 
+  // which layer. You can also specify the colour of the layers in the palette.
+  // Doing this will change the layer colours when you run the "Standardise Layers"
+  // command.
+  // Reordering the layers in here will control the order they are sorted in when
+  // you run the "Standardise Layers" command.
+  "layers": {
+    "Notes": {
+      "colour": "red",
+      "styles": [
+        // Currently there are no styles associated with "Notes" layer.
+      ]
+    },
+    "Top Layer": {
+      "colour": "red",
+      "styles": [
+        "Crag Intros Left",
+        "Crag Intros Right",
+        "Crag Headings Left",
+        "Crag Headings Right",
+        
+        // These four are deprecated, but left in for old docs.
+        "Header Headings-Left",
+        "Header Intros-Left",
+        "Header Headings-Right",
+        "Header Intros-Right",
+        
+        "A-Road Numbers",
+        "B-Road Numbers",
+        "E-Road Numbers",
+        "Yellow Road Numbers",
+        "Red Road Numbers",
+        "Green Road Numbers",
+        "Buttress Box",
+        "Buttress Locator Box Grey",
+        "Buttress Locator Box",
+        "Buttress Locator Names Grey",
+        "Buttress Locator Names",
+        "Buttress Names Grey",
+        "Buttress Names",
+        "Crag Flags Grey",
+        "Crag Flags",
+        "Crag Symbol Box",
+        "Crag Symbol Text",
+        "E-Road Numbers",
+        "Height Marker +30",
+        "Height Marker -30",
+        "Map Zoom Box Page Refs Grey",
+        "Map Zoom Box Page Refs",
+        "Maps-Notes Small",
+        "Maps-Notes",
+        "Motorway Juctions",
+        "Motorway Numbers",
+        "Parking Symbol",
+        "Photo Boxes",
+        "Route Name Boxes",
+        "TopoTextBox-Grey",
+        "TopoTextBox-White NS",
+        "TopoTextBox-White",
+        "Town Names",
+        "Town Names"
+      ]
+    },
+    // The name of the layer
+    "Numbers": {
+      // The colour for the layer.
+      // This is not used by Correct Layer
+      "colour": "blue",
+      // A list of style names to associate
+      // with the layer
+      "styles": [
+        "1pt Black",
+        "Routes Green",
+        "Routes Orange",
+        "Routes Red",
+        "Routes Black"
+      ]
+    },
+    "Route Text": {
+      "colour": "pink",
+      "styles": [
+        "RoutesBox-1",
+        "RoutesBox-1t",
+        "RoutesBox-2",
+        "RoutesBox-2t"
+      ]
+    },
+    "Lines": {
+      "colour": "magenta",
+      "styles": [
+        "Buttress Locator Arrow",
+        "Buttress Locator Arrow NS",
+        "Buttress Locator Arrow Grey",
+        "Buttress Locator Arrow Grey NS",
+        "Approach Arrow",
+        "ApproachArrow-NS",
+        "Descent Arrow",
+        "DescentArrow-NS",
+        "White Arrow",
+        "White Arrow NS",
+        "Grey Arrow",
+        "RL-Dash",
+        "RL-Dot",
+        "RL-dash-dot",
+        "RL-White",
+        "RL-Minor",
+        "RL-White Darker Glow",
+        "RL-Dash Sport",
+        "RL-Dot Sport",
+        "RL-dash-dot Sport",
+        "RL-Boulder"
+      ]
+    },
+    "Thumb Tabs": {
+      "colour": "green",
+      "styles": [
+        "Path",
+        "Track - Small",
+        "Track - Mid",
+        "Track - Large",
+        "Road - Main",
+        "Road - Mid",
+        "Road - Small",
+        "Road - Tiny",
+        "Maps-Cliffs",
+        "Maps-Coastal Grass",
+        "Maps-Grass",
+        "Maps-CragMarker",
+        "Maps-River",
+        "Maps-Trees",
+        "Maps-Water",
+        "Maps-Railway",
+        "National Borders",
+        "National Park Boundary",
+        "Maps-Contours",
+        "Maps-Beach",
+        "Maps-Towns",
+        "Maps-Box",
+        "Maps-Box Sea",
+        "Maps-Note Underlay"
+      ]
+    },
+    "Maps": {
+      "colour": "magenta",
+      "styles": [
+
+      ]
+    },
+    "Main": {
+      "colour": "light blue",
+      "styles": [
+        "Intro Text Boxes",
+        "Intro Text Boxes t"
+      ]
+    }
+  }
+}

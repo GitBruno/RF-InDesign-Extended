@@ -1,0 +1,1 @@
+﻿#target "InDesign";#targetengine 'main';$.level = 0;#include "../../../Extendables/extendables.jsx";var correctLayerFile = File("Event Handlers/Application/afterSelectionAttributeChanged/correct_layer_prefs.json").at(Folder.extendables.parent);correctLayerFile.execute();

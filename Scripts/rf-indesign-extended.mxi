@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension name="RF-InDesign-Extended" version="1.0" requires-restart = "true">  
+     <author name="Rockfax" />  
+     <products>  
+          <product name="InDesign" version="5" primary="true" required="true"/>  
+     </products>
+     
+     <description>  
+          <![CDATA[A plugin that adds a Rockfax menu to InDesign and some new commands to the context menu, as well as some useful scripts.]]>
+     </description>  
+<!--      <license-agreement>  
+          <![CDATA[]]>
+     </license-agreement>   -->
+     <files>  
+        <file source="RF-InDesign-Extended/" destination = "$indesign/scripts/"/>
+        <file source="startup scripts/_RFEventHandlers.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="startup scripts/_RFMenus.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="startup scripts/RFEnable Correct Layer.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="startup scripts/RFOpen Release Notes.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="rockfax_icon_24px.png"  destination="$ExtensionSpecificEMStore" />
+     </files>  
+</macromedia-extension>

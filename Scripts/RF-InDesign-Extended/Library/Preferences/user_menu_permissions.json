@@ -1,0 +1,9 @@
+// Use this to speify menus that are only available to certain users.
+// Use the menu name as the key (leave off any ordering numbers at the beginning),
+// and an array of usernames for the value.
+{
+  "App Preparation": [
+    "fatboy",
+    "niff"
+  ]
+}
