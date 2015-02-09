@@ -7,11 +7,11 @@ A framework for customising the menus and context menus in Adobe InDesign by pla
 By placing script files in a directory structure, you can:
 * Create custom [menu-bar menus](https://github.com/ryecroft/RF-InDesign-Extended/wiki/menu-bar-menus).
 
-[[images/rockfax-menu-in-indesign.png]]
+![Rockfax application menu](https://github.com/ryecroft/RF-InDesign-Extended/wiki/images/rockfax-menu-in-indesign.png)
 
 * Create custom [right-click menus](https://github.com/ryecroft/RF-InDesign-Extended/wiki/right-click-menus).
 
-[[images/rockfax-context-menu.jpg]]
+![Rockfax context menu](https://github.com/ryecroft/RF-InDesign-Extended/wiki/images/rockfax-context-menu.jpg)
 
 * Add application-level event handlers (experimental).
 
