@@ -12,11 +12,11 @@
           <![CDATA[MIT Licenced. RF-InDesign-Extended has an embedded copy of the Extendables framework. https://github.com/debrouwere/Extendables]]>
      </license-agreement>  
      <files>  
-        <file source="RF-InDesign-Extended/" destination = "$indesign/scripts/"/>
-        <file source="startup scripts/_RFEventHandlers.jsx" destination = "$indesign/Scripts/startup scripts/"/>
-        <file source="startup scripts/_RFMenus.jsx" destination = "$indesign/Scripts/startup scripts/"/>
-        <file source="startup scripts/RFEnable Correct Layer.jsx" destination = "$indesign/Scripts/startup scripts/"/>
-        <file source="startup scripts/RFOpen Release Notes.jsx" destination = "$indesign/Scripts/startup scripts/"/>
-        <file source="rockfax_icon_24px.png" destination="$ExtensionSpecificEMStore" />
+        <file source="Scripts/RF-InDesign-Extended/" destination = "$indesign/scripts/"/>
+        <file source="Scripts/startup scripts/_RFEventHandlers.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="Scripts/startup scripts/_RFMenus.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="Scripts/startup scripts/RFEnable Correct Layer.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <file source="Scripts/startup scripts/RFOpen Release Notes.jsx" destination = "$indesign/Scripts/startup scripts/"/>
+        <!-- <file source="rockfax_icon_24px.png" destination="$ExtensionSpecificEMStore" /> -->
      </files>  
 </macromedia-extension>
