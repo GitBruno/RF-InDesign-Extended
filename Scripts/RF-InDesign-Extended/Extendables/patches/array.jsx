@@ -489,3 +489,8 @@ Array.prototype.last = function () {
 Array.prototype.contains = function (obj) {
 	return this.indexOf(obj) != -1;
 }
+
+
+Array.prototype.diff = function(a) {
+  return this.filter(function(i) {return a.indexOf(i) < 0;});
+};

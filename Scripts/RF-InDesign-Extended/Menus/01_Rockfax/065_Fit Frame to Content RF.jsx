@@ -1,8 +1,12 @@
 #target "InDesign";
 #targetengine 'main';
 $.level = 0;
+// alert("_1")
+if (typeof(EXTENDABLES) === 'undefined') {
 #include "../../Extendables/extendables.jsx";
+}
 
+// alert("_2")
 if (typeof(rfidx) == 'undefined') {rfidx = require("rockfaxidx");}
 if (typeof(prefs) == 'undefined') {prefs = rfidx.Prefs();}
 

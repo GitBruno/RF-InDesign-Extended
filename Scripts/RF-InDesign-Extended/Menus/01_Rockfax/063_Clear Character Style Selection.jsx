@@ -1,7 +1,9 @@
 #target "InDesign";
 #targetengine 'main';
 // $.level = 0;
+if (typeof(EXTENDABLES) === 'undefined') {
 #include "../../../Extendables/extendables.jsx";
+}
 // if (typeof(rflib) == 'undefined') {var rflib = require("rf_library");}
 // if (typeof(rfidx) == 'undefined') {var rfidx = require("rockfaxidx");}
 // var rfprefs = rflib.Prefs();

@@ -1,6 +1,8 @@
 #target "InDesign";
 $.level = 0;
+if (typeof(EXTENDABLES) === 'undefined') {
 #include "../../../Extendables/extendables.jsx";
+}
 if (typeof(preferences) == 'undefined') {preferences = require("preferences");}
 if (typeof(rfidx) == 'undefined') {rfidx = require("rockfaxidx");}
 app.scriptPreferences.enableRedraw = false;

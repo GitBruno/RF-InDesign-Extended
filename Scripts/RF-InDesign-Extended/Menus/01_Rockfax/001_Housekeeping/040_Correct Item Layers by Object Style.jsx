@@ -1,7 +1,9 @@
 #target "InDesign";
 #targetengine 'main';
 $.level = 0;
+if (typeof(EXTENDABLES) === 'undefined') {
 #include "../../../Extendables/extendables.jsx";
+}
 if (typeof(rfidx) == 'undefined') {var rfidx = require("rockfaxidx");}
 
 // The lookup object has keys that correspond to layer names, and values that are arrays

@@ -20,3 +20,4 @@ if (app.is("indesign")) {
 #include "rf_array.jsx"
 #include "rf_text_frame.jsx"
 #include "rf_object.jsx"
+#include "JSON.js"

@@ -1,0 +1,67 @@
+// Comments are allowed, but only on their own line, as this one is.
+{
+  // "magic_script_lookup" is used in magic script and the script that decides what to
+  // put in the context menu based on the selection.
+  // The keys are converted to RegExp (see note below) objects, and matched against a set (no more than
+  // one item in a list) of the labels and object styles of the selected objects.
+  // To create a match, each of the values seperated by '&&' in the key must match, and if this happens,
+  // the value for that key is returned.
+  // If you add stuff to this, understand that the first item that matches is chosen,
+  // so you should put them in descending order, and because the example that is in there
+  // now matches everything, you will need to delete it first.
+  
+  // If you find you have entries in the menu that won't go away, it's because you've removed
+  // them from here. They will be gone after restarting ID, or you can re-add the entry here
+  // with a fake key, then pull up the menu again.
+  "magic_script_lookup" : {
+      // ".+":["Group Objects", "Ungroup Objects", "Fit Frame to Content"],
+      "\\[None\\]&&GPS Boxes"                     :["Show Coords in Browser", "Insert GPS Coords", "Make QR Code"],
+      "Lower-off&&RL-&&topo dot"                  :["Assign Lower-offs", "Assign Topodots", "Toggle Lower-offs"],
+      "_lower_off&&RL-&&topo dot"                 :["Assign Lower-offs", "Assign Topodots", "Toggle Lower-offs"],
+      "Helvetica LT Std"                          :["Search on UKC with Crag Name", "Search on UKC"],
+      
+      // This is for legacy support. Remove once all documents no longer have 'belay' labels on belays.
+      // Or, don't bother and remove the next block. Removing the belay label may have an effect on the
+      // parsing.
+      "Belay&&belay&&Lower-off&&RL-&&topo dot"    :["Assign Lower-offs", "Assign Topodots", "Toggle Lower-offs"],
+      "Belay&&belay&&_lower_off&&RL-&&topo dot"   :["Assign Lower-offs", "Assign Topodots", "Toggle Lower-offs"],
+      "Belay&&belay&&RL-&&topo dot"               :["Assign Lower-offs", "Assign Topodots"],
+      "Belay&&belay&&RL-"                         :["Assign Lower-offs"],
+      
+      "Belay&&Lower-off&&RL-&&topo dot"           :["Assign Lower-offs", "Assign Topodots", "Toggle Lower-offs"],
+      "Belay&&_lower_off&&RL-&&topo dot"          :["Assign Lower-offs", "Assign Topodots", "Toggle Lower-offs"],
+      "Belay&&RL-&&topo dot"                      :["Assign Lower-offs", "Assign Topodots"],
+      "Belay&&RL-"                                :["Assign Lower-offs"],
+      
+      "Lower-off&&RL-"                            :["Assign Lower-offs", "Toggle Lower-offs"],
+      "_lower_off&&RL-"                           :["Assign Lower-offs", "Toggle Lower-offs"],
+      "Lower-off"                                 :["Toggle Lower-offs"],
+      "_lower_off"                                :["Toggle Lower-offs"],
+      "topo dot&&RL-"                             :["Assign Topodots"],
+      "topo dot"                                  :["Bump Route Numbers"],
+      "RFNumbers\\tRegular"                       :["Bump Route Numbers"],
+      "Helvetica LT Std\\tCondensed Oblique"      :["Clear Actual Routes"],
+      "Helvetica LT Std\\tCondensed"              :["Set as Actual Routes"],
+      "Intro Text Boxes"                          :["Format Intro Box", "Set Paragraph Size"],
+      "Crag Headings "                            :["Match Page Headers"],
+      "Crag Intros "                              :["Match Page Headers"],
+      "Crag Symbol Box"                           :["Set Buttress Symbols"],
+      "Buttress Locator Arrow"                    :["Delete Unused Pointers"],
+      "Crag Flags"                                :["Delete Unused Pointers"],
+      "Notes"                                     :["Edit Note"],
+      
+      // "centre", "left" and "right" are labels applied to pointers in the 
+      // "Crag Flag"/"GPS Box"/"Buttress Pointer" library items, so these will be matched
+      // when you have one of those pointer/arrows selected (and nothing else).
+      "centre\\b"                                 :["Delete Unused Pointers"],
+      "left\\b"                                   :["Delete Unused Pointers"],
+      "right\\b"                                  :["Delete Unused Pointers"],
+      "Buttress Box"                              :["Format Buttress Box", "Match Name With Header"],
+      "RoutesBox-"                                :["Format Route Box", "Sequentialise RFNumbers"],
+      
+      // You could just write "C-" as the regex query for the busy symbols, but I've put a
+      // longer, less readable one in to future-proof it more.
+      "C-\\d [mM][ea]n"                           :["0 Busy Symbol", "1 Busy Symbol", "2 Busy Symbol", "3 Busy Symbol"],
+      "Indicator"                                 :["Big Cross", "Big Tick", "Small Cross", "Small Tick"]
+    },
+}
