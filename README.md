@@ -13,11 +13,10 @@ By placing script files in a directory structure, you can:
 
 * Create custom [right-click menus](https://github.com/ryecroft/RF-InDesign-Extended/wiki/right-click-menus) based on the current selection in InDesign.
 
-![Rockfax context menu](https://github.com/ryecroft/RF-InDesign-Extended/wiki/images/rockfax-context-menu.jpg)
+![Rockfax context menu](https://github.com/ryecroft/RF-InDesign-Extended/wiki/images/rockfax-context-menu.jpg "The final entry in this context menu was added based on the current selection")
 
 
-
-* Add application-level event handlers (experimental).
+* Add [application-level event handlers](https://github.com/ryecroft/RF-InDesign-Extended/wiki/application-level-event-handlers).
 
 * Included in the event handlers is [Correct Layer](https://github.com/ryecroft/RF-InDesign-Extended/wiki/correct-layer) a script that sets the current layer based on your current object style.
 * Also included are several useful scripts that we use daily at Rockfax (see [Included Scripts](https://github.com/ryecroft/RF-InDesign-Extended/wiki/included-scripts) for details).
